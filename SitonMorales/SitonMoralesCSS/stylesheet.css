@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'HeadingNowTrial'; 
+  src: url('../assets/fonts/HeadingNowTrial-68HeavyItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PoppinsMedium'; 
+  src: url('../assets/fonts/poppins.medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PoppinsRegular'; 
+  src: url('../assets/fonts/poppins.regular.ttf') format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -25,12 +42,16 @@ body {
 }
 
 .navbar h2 {
-    color: #ff4c4ce7;
+    color: #800000;
     font-size: 24px;
+    font-family: 'HeadingNowTrial', sans-serif;
+    text-align: center;
+    width: 100%;
 }
 
 .hero {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 60px 40px;
@@ -39,6 +60,7 @@ body {
 }
 
 .hero-content {
+    text-align: center;
     flex: 1;
     color: white;
     z-index: 2;
@@ -46,12 +68,15 @@ body {
 
 .hero h1 {
     font-size: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
+    font-family: 'PoppinsMedium', sans-serif;
 }
 
 .hero p {
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: 'PoppinsRegular', sans-serif;
 }
 
 .carousel{
@@ -59,6 +84,8 @@ body {
     width: 90%;
     overflow: hidden;
     position: relative;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .carousel:hover .group{
@@ -84,4 +111,20 @@ body {
 @keyframes scroll {
     from { transform: translateX(0);}
     to {transform: translateX(-50%);}
+}
+
+.photo-wrap {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
 }
