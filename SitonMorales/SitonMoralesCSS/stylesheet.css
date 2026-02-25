@@ -128,3 +128,58 @@ body {
     object-fit: cover;
     border: 5px solid white;
 }
+
+.simple-line {
+    border: none;
+    height: 2px;
+    background-color: black;
+    width: 90%;
+    margin: 60px auto;
+}
+
+.portfolio-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin-bottom: 100px;
+    gap: 50px;
+    align-items: center;     
+    width: 100%;
+}
+
+.portfolio-left {
+    flex: 1;
+}
+
+.portfolio-title {
+    font-family: 'HeadingNowTrial', sans-serif;
+    font-size: 40px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.portfolio-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-end;
+}
+
+.person-info {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.person-info h2 {
+    font-family: 'PoppinsMedium', sans-serif;
+    color: #800000;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.person-info p {
+    font-family: 'PoppinsRegular', sans-serif;
+    color: #555;
+    line-height: 1.6;
+}
