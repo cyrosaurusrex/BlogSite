@@ -199,6 +199,7 @@ body {
     font-family: 'PoppinsRegular', sans-serif;
     color: #555;
     line-height: 1.6;
+    text-align: justify;
 }
 
 .page-date {
@@ -222,7 +223,13 @@ body {
     flex: 1;
     background: linear-gradient(135deg, rgba(102, 1, 1, 0.8), rgba(235, 59, 59, 0.8));
     border-radius: 10px;
-    min-height: 400px;
+    min-height: 500px;
+}
+
+.box p{
+color: #ffffff;
+    text-align: center;
+    font-size: 24px;
 }
 
 .box-header {
@@ -231,4 +238,5 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
+
 }
