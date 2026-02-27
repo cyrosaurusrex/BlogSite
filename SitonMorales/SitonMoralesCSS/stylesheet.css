@@ -226,10 +226,12 @@ body {
     min-height: 500px;
 }
 
-.box p{
-color: #ffffff;
-    text-align: center;
-    font-size: 24px;
+.box-text {
+    font-family: 'PoppinsRegular', sans-serif;
+    color: #ffffff;
+    text-align: justify;
+    font-size: 16px;
+    padding: 0 20px 20px 20px;
 }
 
 .box-header {
